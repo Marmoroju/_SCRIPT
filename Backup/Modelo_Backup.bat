@@ -6,7 +6,7 @@ REM	ele gera o LOG no local desejado.
 
 REM 	Autor: Marcos Mourao
 REM 	Data: 09/03/2024
-REM 	Tel.: (99) 99999999
+REM 	Tel.: (22) 998918474
 
 REM 	Argumentos para xcopy /E /C /I /Y 
 REM		Mais informações: Abrir o prompt e digitar xcopy /?
