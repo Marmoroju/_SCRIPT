@@ -1,7 +1,8 @@
 @ECHO OFF
 
 REM 	Script: Modelo de Backup
-REM 	DEFINICAO: O script copia a pasta/arquivo da ORIGEM e cola na pasta DESTINO e gera o LOG no local desejado. 
+REM 	DEFINICAO: O script copia a pasta/arquivo da ORIGEM, cola na pasta DESTINO e gera o LOG no local desejado. 
+REM	Adicionando o nome da PASTA no DESTINO, o script criará uma nova pasta para armazenar os arquivos copiados.
 
 REM 	Autor: Marcos Mourao
 REM 	Data: 09/03/2024
