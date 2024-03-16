@@ -3,7 +3,6 @@
 set ORIGEM=C:\Users\Marcos\Documentos\"Path of Building" 	
 set DESTINO=C:\Users\Marcos\backup_diario\_7_sabado\"Path of Building"
 set LOG=C:\Users\Marcos\log_backup.txt
-set TT="BACKUP de %dow% REALIZADO COM SUCESSO EM %DATE% as %TIME% >> %LOG%"
 
 for /f %%i in ('powershell ^(get-date^).DayofWeek') do set dow=%%i
 if %dow% == Monday goto Monday
@@ -16,25 +15,30 @@ if %dow% == Sunday goto Sunday
 
 :Monday 
 xcopy %ORIGEM% %DESTINO% /E /C /I /Y
+echo BACKUP de %dow% REALIZADO COM SUCESSO EM %DATE% as %TIME% >> %LOG%
 
 :Tuesday 
 xcopy %ORIGEM% %DESTINO% /E /C /I /Y
+echo BACKUP de %dow% REALIZADO COM SUCESSO EM %DATE% as %TIME% >> %LOG%
 
 :Wednesday 
 xcopy %ORIGEM% %DESTINO% /E /C /I /Y
+echo BACKUP de %dow% REALIZADO COM SUCESSO EM %DATE% as %TIME% >> %LOG%
 
 :Thursday 
 xcopy %ORIGEM% %DESTINO% /E /C /I /Y
+echo BACKUP de %dow% REALIZADO COM SUCESSO EM %DATE% as %TIME% >> %LOG%
 
 :Friday 
 xcopy %ORIGEM% %DESTINO% /E /C /I /Y
+echo BACKUP de %dow% REALIZADO COM SUCESSO EM %DATE% as %TIME% >> %LOG%
 
 :Saturday 
 xcopy %ORIGEM% %DESTINO% /E /C /I /Y
-echo %TT%
-:: echo BACKUP de %dow% REALIZADO COM SUCESSO EM %DATE% as %TIME% >> %LOG%
+echo BACKUP de %dow% REALIZADO COM SUCESSO EM %DATE% as %TIME% >> %LOG%
 
 :Sunday 
 xcopy %ORIGEM% %DESTINO% /E /C /I /Y
+echo BACKUP de %dow% REALIZADO COM SUCESSO EM %DATE% as %TIME% >> %LOG%
 
 pause
