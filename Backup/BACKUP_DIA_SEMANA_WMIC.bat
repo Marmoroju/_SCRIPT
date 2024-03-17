@@ -1,4 +1,32 @@
-@echo off
+@ECHO OFF
+
+REM 	Script: Modelo de Backup Diario e Semanal
+REM 	DEFINICAO: O script confere o dia da semana(0[Domingo], 1[Segunda-Feira]...) e de acordo com o dia
+REM              ele armazana na variavel %dow% [DayofWeek] e caso satisfaca aquela condicao
+REM              segue para o estagio do comando (goto) onde sera executado uma cadeia de codigos.
+
+REM 	Autor: Marcos Mourao
+REM 	Data: 16/03/2024
+REM 	Tel.: (22) 998918474
+
+REM 	Argumentos para xcopy /E /C /I /Y 
+REM		Mais informações: Abrir o prompt e digitar xcopy /?
+
+REM		/E - Copia diretórios e subdiretórios, incluindo os vazios.
+REM		/C - Continua a cópia mesmo se houver erros.
+REM		/I - Se o destino não existir e se mais de um arquivo estiver sendo copiado,
+REM        assume que o destino deve ser um diretório.
+REM 	/Y - Elimina a solicitação de confirmação de que você deseja substituir um
+REM        arquivo de destino existente.
+
+
+REM     ORIGEM      Path do arquivo ou diretorio a ser copiado(Origem do Backup)
+REM     DESTINO_*   Path do local onde sera armazenado o backup
+REM     DESTINO     Se for armazenar em um servidor local e este estiver mapeado no proprio computador
+REM                 basta adicionar o caminho a partir da LETRA, exemplo, Y:\Path\
+REM     LOG         Local de armazenamento do arquivo de log. 
+
+:: Inicio das Variaveis
 
 :: set ORIGEM=C:\Users\Marcos\Documentos\"Path of Building" 
 set ORIGEM=C:\Users\Marcos\BATCH_SCRIPT
