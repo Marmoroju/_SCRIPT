@@ -42,7 +42,7 @@ set LOG=C:\Users\Marcos\log_backup.txt
 
 :: Fim das Variaveis
 
-:: Instrucoes
+:: Instrucoes [NAO MODIFICAR]
 
 for /f %%i in ('powershell ^(get-date^).DayofWeek') do set dow=%%i
 if %dow% == Sunday goto DOMINGO
