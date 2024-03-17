@@ -41,6 +41,10 @@ set DESTINO_SABADO=C:\Users\Marcos\backup_diario\_7_sabado\BACKUP
 
 set LOG=C:\Users\Marcos\log_backup.txt
 
+:: Fim das Variaveis
+
+:: Instrucoes [NAO MODIFICAR]
+
 for /f %%i in ('cmd /c wmic path win32_localtime get dayofweek^|findstr [0-6]') do set dow=%%i
 if %dow% == 0 goto DOMINGO
 if %dow% == 1 goto SEGUNDA
