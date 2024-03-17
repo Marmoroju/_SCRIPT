@@ -12,32 +12,32 @@ REM 	Tel.: (22) 998918474
 REM 	Argumentos para xcopy /E /C /I /Y 
 REM		Mais informações: Abrir o prompt e digitar xcopy /?
 
-REM		/E - Copia diretórios e subdiretórios, incluindo os vazios.
-REM		/C - Continua a cópia mesmo se houver erros.
-REM		/I - Se o destino não existir e se mais de um arquivo estiver sendo copiado,
-REM        assume que o destino deve ser um diretório.
-REM 	/Y - Elimina a solicitação de confirmação de que você deseja substituir um
-REM        arquivo de destino existente.
+REM		  /E -       Copia diretórios e subdiretórios, incluindo os vazios.
+REM		  /C -       Continua a cópia mesmo se houver erros.
+REM		  /I -       Se o destino não existir e se mais de um arquivo estiver sendo copiado,
+REM                assume que o destino deve ser um diretório.
+REM 	  /Y -       Elimina a solicitação de confirmação de que você deseja substituir um
+REM                arquivo de destino existente.
 
 
-REM     ORIGEM      Path do arquivo ou diretorio a ser copiado(Origem do Backup)
-REM     DESTINO_*   Path do local onde sera armazenado o backup
-REM     DESTINO     Se for armazenar em um servidor local e este estiver mapeado no proprio computador
-REM                 basta adicionar o caminho a partir da LETRA, exemplo, Y:\Path\
-REM     LOG         Local de armazenamento do arquivo de log. 
+REM     ORIGEM -     Path do arquivo ou diretorio a ser copiado(Origem do Backup)
+REM     DESTINO_* -  Path do local onde sera armazenado o backup.
+REM                  Se for armazenar em um SERVIDOR LOCAL e este estiver mapeado no proprio computador,
+REM                  basta adicionar o caminho a partir da LETRA, exemplo, Y:\Path\
+REM     LOG -        Local de armazenamento do arquivo de log. 
 
 :: Inicio das Variaveis
 
-:: set ORIGEM=C:\Users\Marcos\Documentos\"Path of Building" 
+:: set ORIGEM=C:\Users\Marcos\Documentos\"Nomes com Espaco" 
 set ORIGEM=C:\Users\Marcos\BATCH_SCRIPT
 
-set DESTINO_DOMINGO=C:\Users\Marcos\backup_diario\_1_domingo\"Path of Building"	
-set DESTINO_SEGUNDA=C:\Users\Marcos\backup_diario\_2_segunda_feira\"Path of Building"
-set DESTINO_TERCA=C:\Users\Marcos\backup_diario\_3_terca_feira\"Path of Building"
-set DESTINO_QUARTA=C:\Users\Marcos\backup_diario\_4_quarta_feira\"Path of Building"
-set DESTINO_QUINTA=C:\Users\Marcos\backup_diario\_5_quinta_feira\"Path of Building"
-set DESTINO_SEXTA=C:\Users\Marcos\backup_diario\_6_sexta_feira\"Path of Building"
-set DESTINO_SABADO=C:\Users\Marcos\backup_diario\_7_sabado\BAT
+set DESTINO_DOMINGO=C:\Users\Marcos\backup_diario\_1_domingo\"Nomes com Espaco"	
+set DESTINO_SEGUNDA=C:\Users\Marcos\backup_diario\_2_segunda_feira\BACKUP
+set DESTINO_TERCA=C:\Users\Marcos\backup_diario\_3_terca_feira\BACKUP
+set DESTINO_QUARTA=C:\Users\Marcos\backup_diario\_4_quarta_feira\BACKUP
+set DESTINO_QUINTA=C:\Users\Marcos\backup_diario\_5_quinta_feira\BACKUP
+set DESTINO_SEXTA=C:\Users\Marcos\backup_diario\_6_sexta_feira\BACKUP
+set DESTINO_SABADO=C:\Users\Marcos\backup_diario\_7_sabado\BACKUP
 
 set LOG=C:\Users\Marcos\log_backup.txt
 
