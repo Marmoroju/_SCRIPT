@@ -20,12 +20,11 @@ REM 	/Y - Elimina a solicitação de confirmação de que você deseja substitui
 REM        arquivo de destino existente.
 
 
-REM     ORIGEM - Path do arquivo ou diretorio a ser copiado(Origem do Backup)
-REM     DESTINO_* - Path do local onde sera armazenado o backup
-REM     DESTINO - Se for armazenar em um servidor local e este estiver mapeado no proprio computador
-                  basta adicionar o caminho a partir da LETRA, exemplo, Y:\Path\
-REM     LOG - Local de armazenamento do arquivo de log. Os caracteres ">>" acrescentam uma nova linha 
-               ao inves de substituir o arquivo de log.
+REM     ORIGEM      Path do arquivo ou diretorio a ser copiado(Origem do Backup)
+REM     DESTINO_*   Path do local onde sera armazenado o backup
+REM     DESTINO     Se for armazenar em um servidor local e este estiver mapeado no proprio computador
+REM                 basta adicionar o caminho a partir da LETRA, exemplo, Y:\Path\
+REM     LOG         Local de armazenamento do arquivo de log. 
 
 :: Inicio das Variaveis
 
