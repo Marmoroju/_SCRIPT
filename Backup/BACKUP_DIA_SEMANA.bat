@@ -28,15 +28,15 @@ REM     LOG         Local de armazenamento do arquivo de log.
 
 :: Inicio das Variaveis
 
-set ORIGEM=C:\Users\Marcos\Documentos\"Path of Building" 
+set ORIGEM=C:\Users\Marcos\Documentos\"Nomes com Espaco" 
 
-set DESTINO_DOMINGO=C:\Users\Marcos\backup_diario\_1_domingo\"Path of Building"	
-set DESTINO_SEGUNDA=C:\Users\Marcos\backup_diario\_2_segunda_feira\"Path of Building"
-set DESTINO_TERCA=C:\Users\Marcos\backup_diario\_3_terca_feira\"Path of Building"
-set DESTINO_QUARTA=C:\Users\Marcos\backup_diario\_4_quarta_feira\"Path of Building"
-set DESTINO_QUINTA=C:\Users\Marcos\backup_diario\_5_quinta_feira\"Path of Building"
-set DESTINO_SEXTA=C:\Users\Marcos\backup_diario\_6_sexta_feira\"Path of Building"
-set DESTINO_SABADO=C:\Users\Marcos\backup_diario\_7_sabado\"Path of Building"
+set DESTINO_DOMINGO=C:\Users\Marcos\backup_diario\_1_domingo\"Nomes com Espaco"	
+set DESTINO_SEGUNDA=C:\Users\Marcos\backup_diario\_2_segunda_feira\BACKUP
+set DESTINO_TERCA=C:\Users\Marcos\backup_diario\_3_terca_feira\BACKUP
+set DESTINO_QUARTA=C:\Users\Marcos\backup_diario\_4_quarta_feira\BACKUP
+set DESTINO_QUINTA=C:\Users\Marcos\backup_diario\_5_quinta_feira\BACKUP
+set DESTINO_SEXTA=C:\Users\Marcos\backup_diario\_6_sexta_feira\BACKUP
+set DESTINO_SABADO=C:\Users\Marcos\backup_diario\_7_sabado\BACKUP
 
 set LOG=C:\Users\Marcos\log_backup.txt
 
