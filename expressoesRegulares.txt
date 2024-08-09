@@ -1,0 +1,27 @@
+# Âncoras de linha
+    ^ início de uma linha
+    $ final de uma linha
+
+    ^error linhas que iniciam com error
+    \.$ linhas que terminam com um . (ponto)
+    ^$ linhas vazias
+
+    grep '^o' texto.txt
+    grep -v -e '^$' -e '^# /etc/ssh/ssh_config  # retorna linhas não vazias e linhas não comentadas
+
+# glob
+    set -f (desativa o modo de busca)
+    set +f (ativa o modo de busca)
+    texto.*
+    rm /temp/*
+    m?rco? (? serve de substituto de qqr tipo de caractere)
+
+# egrep (extended egrep)
+    egrep -w '[[:alpha:]]{3}' texto.txt # retorna linhas que possuem 3 caracteres alfanuméricos
+    egrep -w '.{40,}' texto.txt # retorna linhas com 40 caracteres
+
+# sed 
+    sed 's/esta/porEsta/'
+    echo "ola mundo" | sed 's/mundo/planeta/' #substitui na primeira linha encontrada
+    echo "ola mundo" | sed 's/mundo/planeta/g' # substitui em todo o texto
+
